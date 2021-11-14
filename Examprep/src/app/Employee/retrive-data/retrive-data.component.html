@@ -1,0 +1,18 @@
+
+<body>
+    <div class="container">
+    <h4>List of Data</h4>
+    <div class="body">
+   
+        <ul class="list-group-horizontal" *ngFor="let data of Data" >
+                  
+          <li  >{{data}}</li>
+    </ul>
+   
+    </div>
+      <button class="btn btn-outline-info" routerLink="">Close Data List</button>
+</div>    
+  </body>
+  <router-outlet></router-outlet>
+
+<p>retrive-data works!</p>

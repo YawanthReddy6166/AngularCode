@@ -1,0 +1,29 @@
+
+<body>
+    <div class="container">
+    <h4>List of Data</h4>
+    <div class="body">
+        
+    
+    <table class="table table-hover table-striped table-responsive-md">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody  *ngFor="let emp of student">
+          <tr>
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.age}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+      <button class="btn btn-outline-info" routerLink="">Close EmployeeList</button>
+</div>    
+  </body>
+  <router-outlet></router-outlet>
